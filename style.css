@@ -1,0 +1,68 @@
+body {
+  background-color: rgb(89, 180, 180);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+div {
+}
+#head1 {
+  text-align: center;
+  color: beige;
+  transition: ease-in-out;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* .box {
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+  height: 50%;
+} */
+.gameboard {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  color: #fff;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.box {
+  font-family: Helvetica;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#box1 {
+  background-color: rgb(18, 18, 143);
+}
+#box2 {
+  background-color: rgb(153, 24, 24);
+}
+#box3 {
+  background-color: seagreen;
+}
+#box4 {
+  background-color: rgb(180, 117, 0);
+}
+#box1:hover,
+#box1:focus {
+  background-color: rgb(0, 17, 255);
+}
+#box2:hover,
+#box2:focus {
+  background-color: rgb(255, 0, 0);
+}
+#box3:hover,
+#box3:focus {
+  background-color: rgb(30, 255, 0);
+}
+#box4:hover,
+#box4:focus {
+  background-color: rgb(255, 210, 9);
+}

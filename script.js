@@ -2,7 +2,7 @@ let simon = []
 let turns = 0
 let player = []
 const startGame = document.getElementById('start')
-gameboard.addEvenListener('click', event)
+
 function simonGoes() {
   simon.push(Math.floor(4 * Math.random()) + 1)
   turns += 1

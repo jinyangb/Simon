@@ -1,13 +1,19 @@
 let simon = []
 let turns = 0
 let player = []
-let choices = [1, 2, 3, 4]
-let squares = document.getElementsByClassName('box')
+const startGame = document.getElementById('start')
+gameboard.addEvenListener('click', event)
 function simonGoes() {
   simon.push(Math.floor(4 * Math.random()) + 1)
   turns += 1
+  function playerGoes() {
+    player.push(clicks)
+  }
 }
-console.log(simon)
-simonGoes()
-console.log(simon)
-console.log(turns)
+// if (simon === player) {
+//   function simonGoes() {
+//     turns += 1
+//   }
+// } else {
+//   turns = 0
+// }

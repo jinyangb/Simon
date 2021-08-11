@@ -1,41 +1,58 @@
 let simon = []
 let count = 0
 let player = []
-const begin = document.querySelector('#start')
-let boxes = document.querySelectorAll('.box')
-// const startGame = document.querySelector('.start')
+let flash
+let win
 let clicks = document.querySelector('.gameboard')
+let boxes = document.querySelectorAll('.box')
 
-console.log(begin)
-begin.addEventListener('click', () => {
-  simonGoes()
+const begin = document.querySelector('#start')
+const turnCounter = document
+const blue = document / querySelector('#box1')
+const red = document / querySelector('#box2')
+const green = document / querySelector('#box3')
+const orange = document / querySelector('#box4')
+
+begin.addEventListener('click', (event) => {
+  if (win) {
+    play()
+  }
+  // simonGoes()
 })
+
 function simonGoes() {
   let tile = boxes[Math.floor(Math.random() * boxes.length)]
   let id = parseInt(tile.dataset.id)
   simon.push(id)
 }
 simonGoes()
-console.log(simon)
+console.log('simon', simon)
+
 boxes.forEach((box, i) => {
   box.addEventListener('click', (event) => {
     let id = parseInt(event.target.dataset.id)
     player.push(id)
-    console.log(player)
+    console.log('player', player)
+
+    result(count)
+    count += 1
+
     simonGoes()
     console.log('simon', simon)
-    result(i)
   })
 })
 
 function result(i) {
+  console.log('index', i)
   if (simon[i] === player[i]) {
-    console.log('simon = player[i]')
+    console.log('Success')
   } else {
     alert('Game Over')
   }
 }
 
+// when 'begin' is clicked simon picks a number 1 through 4
+// I need function to restart everytime and add more squares clicked.
 // click begin
 // simon goes once
 // simon array get one random value between 1 and 4

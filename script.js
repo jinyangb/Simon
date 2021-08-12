@@ -36,31 +36,50 @@ const startButton = document.querySelector('#start')
 //   intervalId = setInterval(gameTurn, 800)
 // }
 
-function gameTurn() {
-  on = false
+// function gameTurn() {
+//   on = false
 
-  if (flash == turn) {
-    clearInterval(intervalId)
-    simon = false
-    clearColor()
-    on = true
-  }
+// if (flash == turn) {
+//   clearInterval(intervalId)
+//   simon = false
+//   clearColor()
+//   on = true
+// }
+
+// if (simon) {
+//   clearColor()
+//   setTimeout(() => {
+//     if (order[flash] == box1)
+//       if (order[flash] == box2)
+//         if (order[flash] == box33) if (order[flash] == box4) flash++
+//   }, 500)
+// }
+
+function clearColor() {
+  box1.style.backgroundColor = 'blue'
+  box2.style.backgroundColor = 'red'
+  box3.style.backgroundColor = 'green'
+  box4.style.backgroundColor = 'orange'
 }
 
-if (simon) {
-  clearColor()
-  setTimeout(() => {
-    if (order[flash] == 1)
-      if (order[flash] == 2)
-        if (order[flash] == 3) if (order[flash] == 4) flash++
-  }, 200)
+function flashColor() {
+  box1.style.backgroundColor = 'blue'
+  box2.style.backgroundColor = 'red'
+  box3.style.backgroundColor = 'green'
+  box4.style.backgroundColor = 'orange'
 }
 
 function simonGoes() {
   let tile = boxes[Math.floor(Math.random() * boxes.length)]
   let id = parseInt(tile.dataset.id)
   simon.push(id)
+  window.setTimeout(flashColor())
+  window.clearInterval()
 }
+
+// simon.forEach((box1) => {
+//   document.getElementById(box1).className('box')
+// })
 
 simonGoes()
 console.log('simon', simon)
@@ -92,31 +111,6 @@ boxes.forEach((box, i) => {
     player.pop()
   }
 })
-
-function gameTurn() {
-  on = false
-
-  if (flash == turn) {
-    clearInterval(intervalId)
-    compTurn = false
-    clearColor()
-    on = true
-  }
-}
-
-function clearColor() {
-  box1.style.backgroundColor = 'blue'
-  box2.style.backgroundColor = 'red'
-  box3.style.backgroundColor = 'green'
-  box4.style.backgroundColor = 'orange'
-}
-
-function flashColor() {
-  box1.style.backgroundColor = 'blue'
-  box2.style.backgroundColor = 'red'
-  box3.style.backgroundColor = 'green'
-  box4.style.backgroundColor = 'orange'
-}
 
 // let beginButton = document.querySelector('#start')
 // document.getElementById('start').innerHTML = 'Start'

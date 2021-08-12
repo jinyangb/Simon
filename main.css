@@ -10,16 +10,16 @@ h1 {
   display: grid;
   justify-content: center;
   font-size: 60px;
-  color: blueviolet;
+  color: rgb(172, 108, 231);
 }
 
 body {
-  background-color: rgb(167, 124, 67);
+  background-color: rgb(92, 83, 83);
 }
 
 .button:hover,
 .button:focus {
-  color: rgb(253, 187, 100);
+  color: rgb(253, 198, 143);
 }
 
 p {

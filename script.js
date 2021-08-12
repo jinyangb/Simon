@@ -83,11 +83,11 @@ console.log('simon', simon)
 simon.forEach((id) => {
   let currentBox = document.querySelector(`[data-id='${id}']`)
   setTimeout(function () {
-    currentBox.classList.add('bright')
-  }, 3000)
+    currentBox.classList.toggle('bright')
+  }, 500)
   setTimeout(function () {
-    currentBox.classList.remove('bright')
-  }, 2000)
+    currentBox.classList.toggle('bright')
+  }, 1000)
 })
 
 function result(i) {

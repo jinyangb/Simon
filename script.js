@@ -20,21 +20,21 @@ startButton.addEventListener('click', (event) => {
     play()
   }
 })
-function play() {
-  win = false
-  order = []
-  player = []
-  flash = 0
-  intervalId = 0
-  count = 1
-  good = true
-  for (let i = 0; i <= simon.length; i++) {
-    order.push(Math.floor(Math.random() * 4) + 1)
-  }
-  simon = true
+// function play() {
+//   win = false
+//   order = []
+//   player = []
+//   flash = 0
+//   intervalId = 0
+//   count = 1
+//   good = true
+//   for (let i = 0; i <= simon.length; i++) {
+//     order.push(Math.floor(Math.random() * 4) + 1)
+//   }
+//   simon = true
 
-  intervalId = setInterval(gameTurn, 800)
-}
+//   intervalId = setInterval(gameTurn, 800)
+// }
 
 function gameTurn() {
   on = false
@@ -47,14 +47,14 @@ function gameTurn() {
   }
 }
 
-if (simon) {
-  clearColor()
-  setTimeout(() => {
-    if (order[flash] == 1)
-      if (order[flash] == 2)
-        if (order[flash] == 3) if (order[flash] == 4) flash++
-  }, 200)
-}
+// if (simon) {
+//   clearColor()
+//   setTimeout(() => {
+//     if (order[flash] == 1)
+//       if (order[flash] == 2)
+//         if (order[flash] == 3) if (order[flash] == 4) flash++
+//   }, 200)
+// }
 
 function simonGoes() {
   let tile = boxes[Math.floor(Math.random() * boxes.length)]
@@ -87,12 +87,10 @@ boxes.forEach((box, i) => {
     simonGoes()
     console.log('simon', simon)
   })
-  function clearArray(player) {
-    while (simon.length) {
-      array.pop()
-    }
+
+  while (player.length > 0) {
+    player.pop()
   }
-  clearArray()
 })
 
 function gameTurn() {
@@ -120,6 +118,8 @@ function flashColor() {
   box4.style.backgroundColor = 'orange'
 }
 
+// let beginButton = document.querySelector('#start')
+document.getElementById('start').innerHTML = 'new_text'
 // when 'begin' is clicked simon picks a number 1 through 4
 // I need function to restart everytime and add more squares clicked.
 // click begin

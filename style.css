@@ -87,3 +87,6 @@ body {
 #box4.activated {
   background-color: rgb(255, 210, 9);
 }
+#start:hover .innerText {
+  display: block;
+}

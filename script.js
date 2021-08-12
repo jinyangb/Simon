@@ -15,11 +15,11 @@ const green = document.querySelector('#box3')
 const orange = document.querySelector('#box4')
 const startButton = document.querySelector('#start')
 
-startButton.addEventListener('click', (event) => {
-  if (win) {
-    play()
-  }
-})
+// startButton.addEventListener('click', (event) => {
+//   if (win) {
+//     play()
+//   }
+// })
 // function play() {
 //   win = false
 //   order = []
@@ -47,14 +47,14 @@ function gameTurn() {
   }
 }
 
-// if (simon) {
-//   clearColor()
-//   setTimeout(() => {
-//     if (order[flash] == 1)
-//       if (order[flash] == 2)
-//         if (order[flash] == 3) if (order[flash] == 4) flash++
-//   }, 200)
-// }
+if (simon) {
+  clearColor()
+  setTimeout(() => {
+    if (order[flash] == 1)
+      if (order[flash] == 2)
+        if (order[flash] == 3) if (order[flash] == 4) flash++
+  }, 200)
+}
 
 function simonGoes() {
   let tile = boxes[Math.floor(Math.random() * boxes.length)]
@@ -119,7 +119,7 @@ function flashColor() {
 }
 
 // let beginButton = document.querySelector('#start')
-document.getElementById('start').innerHTML = 'new_text'
+// document.getElementById('start').innerHTML = 'Start'
 // when 'begin' is clicked simon picks a number 1 through 4
 // I need function to restart everytime and add more squares clicked.
 // click begin

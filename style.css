@@ -1,7 +1,17 @@
 body {
-  background-color: rgb(89, 180, 180);
+  background-color: rgb(253, 187, 100);
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+section {
+  display: grid;
+  justify-content: center;
+}
+.buttonSec {
+  color: beige;
+  transition: ease-in-out;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 .beginButton {
   display: grid;
   justify-content: center;

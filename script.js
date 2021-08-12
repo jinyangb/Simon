@@ -108,6 +108,7 @@ boxes.forEach((box, i) => {
     result(count)
     count += 1
     if (count === simon.length) {
+      count = 0
       simonGoes()
     }
   })

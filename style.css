@@ -25,12 +25,7 @@ section {
   transition: ease-in-out;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
-/* .box {
-  box-sizing: border-box;
-  float: left;
-  width: 50%;
-  height: 50%;
-} */
+
 .gameboard {
   width: 400px;
   height: 400px;
@@ -103,4 +98,14 @@ section {
 }
 #start:hover .innerText {
   display: block;
+}
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+#inst {
+  font-weight: 500;
+  font-size: 10px;
+  font-style: oblique;
+  color: rgb(3, 94, 94);
 }

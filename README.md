@@ -22,11 +22,13 @@ Simon says game. It's a game where there is a computer that selects tiles in a c
 
 **_Getting Started_**
 
-To open the game I will use surge.
+Open game is surge.
 
 **_Screenshots_**
 
-#####
+##### gameboard
+
+![Gameboard](Screen Shot 2021-08-12 at 4.54.53 PM.png)
 
 #####
 
@@ -37,6 +39,5 @@ To open the game I will use surge.
 - [ ] Future Update 1
 - [ ] Future Update 2
 - [] Completed Update
-- [] ~~Completed Update~~
 
 **_Credits_**

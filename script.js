@@ -3,6 +3,7 @@ let count = 0
 let player = []
 let on = 500
 let off = 1000
+let butt = document.getElementById('inst')
 
 let boxes = document.querySelectorAll('.box')
 
@@ -50,4 +51,8 @@ boxes.forEach((box, i) => {
       simonGoes()
     }
   })
+})
+
+butt.addEventListener('click', () => {
+  alert('All you have to do is memorize the color pattern!')
 })

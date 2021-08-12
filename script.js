@@ -1,6 +1,8 @@
 let simon = []
 let count = 0
 let player = []
+let on = 500
+let off = 1000
 
 let boxes = document.querySelectorAll('.box')
 
@@ -9,14 +11,15 @@ function simonGoes() {
   let id = parseInt(tile.dataset.id)
   simon.push(id)
 
-  simon.forEach((id) => {
+  simon.forEach((id, i) => {
     let currentBox = document.querySelector(`[data-id='${id}']`)
     setTimeout(function () {
       currentBox.classList.toggle('bright')
-    }, 500)
+    }, on * (i + 1))
+
     setTimeout(function () {
       currentBox.classList.toggle('bright')
-    }, 1000)
+    }, on * (i + 1) + 500)
   })
 }
 
@@ -43,6 +46,7 @@ boxes.forEach((box, i) => {
     count += 1
     if (count === simon.length) {
       count = 0
+      player = []
       simonGoes()
     }
   })

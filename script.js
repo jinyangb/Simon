@@ -75,20 +75,19 @@ function simonGoes() {
   simon.push(id)
   // window.setTimeout(flashColor())
   // window.clearInterval()
+  simon.forEach((id) => {
+    let currentBox = document.querySelector(`[data-id='${id}']`)
+    setTimeout(function () {
+      currentBox.classList.toggle('bright')
+    }, 500)
+    setTimeout(function () {
+      currentBox.classList.toggle('bright')
+    }, 1000)
+  })
 }
 
 simonGoes()
 console.log('simon', simon)
-
-simon.forEach((id) => {
-  let currentBox = document.querySelector(`[data-id='${id}']`)
-  setTimeout(function () {
-    currentBox.classList.toggle('bright')
-  }, 500)
-  setTimeout(function () {
-    currentBox.classList.toggle('bright')
-  }, 1000)
-})
 
 function result(i) {
   console.log('index', i)
@@ -108,14 +107,10 @@ boxes.forEach((box, i) => {
 
     result(count)
     count += 1
-
-    simonGoes()
-    console.log('simon', simon)
+    if (count === simon.length) {
+      simonGoes()
+    }
   })
-
-  while (player.length > 0) {
-    player.pop()
-  }
 })
 
 // let beginButton = document.querySelector('#start')

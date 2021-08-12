@@ -82,19 +82,23 @@ section {
   background-color: rgb(170, 139, 0);
 }
 #box1:active,
-#box1.activated {
+#box1.activated,
+#box1.bright {
   background-color: rgb(47, 60, 252);
 }
 #box2:active,
-#box2.activated {
+#box2.activated,
+#box2.bright {
   background-color: rgb(253, 67, 67);
 }
 #box3:active,
-#box3.activated {
+#box3.activated,
+#box3.bright {
   background-color: rgb(30, 255, 0);
 }
 #box4:active,
-#box4.activated {
+#box4.activated,
+#box4.bright {
   background-color: rgb(255, 210, 9);
 }
 #start:hover .innerText {

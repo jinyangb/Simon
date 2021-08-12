@@ -55,34 +55,40 @@ const startButton = document.querySelector('#start')
 //   }, 500)
 // }
 
-function clearColor() {
-  box1.style.backgroundColor = 'blue'
-  box2.style.backgroundColor = 'red'
-  box3.style.backgroundColor = 'green'
-  box4.style.backgroundColor = 'orange'
-}
+// function clearColor() {
+//   box1.style.backgroundColor = 'blue'
+//   box2.style.backgroundColor = 'red'
+//   box3.style.backgroundColor = 'green'
+//   box4.style.backgroundColor = 'orange'
+// }
 
-function flashColor() {
-  box1.style.backgroundColor = 'blue'
-  box2.style.backgroundColor = 'red'
-  box3.style.backgroundColor = 'green'
-  box4.style.backgroundColor = 'orange'
-}
+// function flashColor() {
+//   box1.style.backgroundColor = 'blue'
+//   box2.style.backgroundColor = 'red'
+//   box3.style.backgroundColor = 'green'
+//   box4.style.backgroundColor = 'orange'
+// }
 
 function simonGoes() {
   let tile = boxes[Math.floor(Math.random() * boxes.length)]
   let id = parseInt(tile.dataset.id)
   simon.push(id)
-  window.setTimeout(flashColor())
-  window.clearInterval()
+  // window.setTimeout(flashColor())
+  // window.clearInterval()
 }
-
-// simon.forEach((box1) => {
-//   document.getElementById(box1).className('box')
-// })
 
 simonGoes()
 console.log('simon', simon)
+
+simon.forEach((id) => {
+  let currentBox = document.querySelector(`[data-id='${id}']`)
+  setTimeout(function () {
+    currentBox.classList.add('bright')
+  }, 3000)
+  setTimeout(function () {
+    currentBox.classList.remove('bright')
+  }, 2000)
+})
 
 function result(i) {
   console.log('index', i)

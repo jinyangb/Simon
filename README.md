@@ -50,6 +50,3 @@ Open game in surge.
 - [x] Instructions Button
 
 **_Credits_**
-
-w2schools
-mozilla

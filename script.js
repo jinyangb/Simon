@@ -1,7 +1,7 @@
 let simon = []
 let count = 0
 let player = []
-let on = 500
+let on = 300
 let off = 1000
 let butt = document.getElementById('inst')
 let motiv = document.getElementById('motiv')
@@ -15,10 +15,10 @@ function simonGoes() {
     let currentBox = document.querySelector(`[data-id='${id}']`)
     setTimeout(function () {
       currentBox.classList.add('bright')
-    }, on * (i + 1) + 300)
+    }, on * (i + 1) + 200)
     setTimeout(function () {
       currentBox.classList.remove('bright')
-    }, on * (i + 1) + 500)
+    }, on * (i + 1) + 300)
   })
 }
 

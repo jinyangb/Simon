@@ -4,14 +4,13 @@ let player = []
 let on = 500
 let off = 1000
 let butt = document.getElementById('inst')
-
+let motiv = document.getElementById('motiv')
 let boxes = document.querySelectorAll('.box')
 
 function simonGoes() {
   let tile = boxes[Math.floor(Math.random() * boxes.length)]
   let id = parseInt(tile.dataset.id)
   simon.push(id)
-
   simon.forEach((id, i) => {
     let currentBox = document.querySelector(`[data-id='${id}']`)
     setTimeout(function () {
@@ -41,7 +40,6 @@ boxes.forEach((box, i) => {
     let id = parseInt(event.target.dataset.id)
     player.push(id)
     console.log('player', player)
-
     result(count)
     count += 1
     if (count === simon.length) {
@@ -54,4 +52,8 @@ boxes.forEach((box, i) => {
 
 butt.addEventListener('click', () => {
   alert('All you have to do is memorize the color pattern!')
+})
+
+motiv.addEventListener('click', () => {
+  alert('You got this!')
 })

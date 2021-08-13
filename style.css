@@ -2,10 +2,12 @@ body {
   background-color: rgb(253, 187, 100);
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
 section {
   display: grid;
   justify-content: center;
 }
+
 .buttonSec {
   color: rgb(173, 173, 58);
   transition: ease-in-out;
@@ -19,6 +21,7 @@ section {
   transition: ease-in-out;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 #head1 {
   text-align: center;
   color: beige;
@@ -36,6 +39,7 @@ section {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
+
 .box {
   font-family: Helvetica;
   font-size: 20px;
@@ -48,62 +52,84 @@ section {
   margin-left: 10px;
   margin-right: 10px;
 }
+
 #box1 {
   background-color: rgb(18, 18, 143);
 }
+
 #box2 {
   background-color: rgb(153, 24, 24);
 }
+
 #box3 {
   background-color: seagreen;
 }
+
 #box4 {
   background-color: rgb(180, 117, 0);
 }
+
 #box1:hover,
 #box1:focus {
   background-color: rgb(1, 13, 177);
 }
+
 #box2:hover,
 #box2:focus {
   background-color: rgb(201, 0, 0);
 }
+
 #box3:hover,
 #box3:focus {
   background-color: rgb(19, 160, 0);
 }
+
 #box4:hover,
 #box4:focus {
   background-color: rgb(170, 139, 0);
 }
+
 #box1:active,
 #box1.activated,
 #box1.bright {
   background-color: rgb(47, 60, 252);
 }
+
 #box2:active,
 #box2.activated,
 #box2.bright {
   background-color: rgb(253, 67, 67);
 }
+
 #box3:active,
 #box3.activated,
 #box3.bright {
   background-color: rgb(30, 255, 0);
 }
+
 #box4:active,
 #box4.activated,
 #box4.bright {
   background-color: rgb(255, 210, 9);
 }
+
 #start:hover .innerText {
   display: block;
 }
+
 footer {
   text-align: center;
   margin-top: 20px;
 }
+
 #inst {
+  font-weight: 500;
+  font-size: 10px;
+  font-style: oblique;
+  color: rgb(3, 94, 94);
+}
+
+#motiv {
   font-weight: 500;
   font-size: 10px;
   font-style: oblique;

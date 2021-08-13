@@ -15,11 +15,10 @@ function simonGoes() {
   simon.forEach((id, i) => {
     let currentBox = document.querySelector(`[data-id='${id}']`)
     setTimeout(function () {
-      currentBox.classList.toggle('bright')
-    }, on * (i + 1))
-
+      currentBox.classList.add('bright')
+    }, on * (i + 1) + 300)
     setTimeout(function () {
-      currentBox.classList.toggle('bright')
+      currentBox.classList.remove('bright')
     }, on * (i + 1) + 500)
   })
 }

@@ -8,11 +8,11 @@
 
 [Git](https://github.com/jinyangb)
 
----
+[Surge]()
 
 **_Description_**
 
-Simon says game. It's a game where there is a computer that selects tiles in a certain order and then the player has to then select the same tiles in the same order. It is a game of memory that gradually get more difficult as you go.
+Simon says game. It's a game where there is a computer that selects tiles in a certain order and the player has to then select the same tiles in the same order. It is a game of memory that gradually get more difficult as you go.
 
 **_Technologies Used_**
 
@@ -22,22 +22,29 @@ Simon says game. It's a game where there is a computer that selects tiles in a c
 
 **_Getting Started_**
 
-Open game is surge.
+Open game in surge.
 
 **_Screenshots_**
 
+##### start screen
+
+![Start Screen](startscreen.png)
+
 ##### gameboard
 
-![Gameboard](Screen Shot 2021-08-12 at 4.54.53 PM.png)
+![Gameboard](gameboard.png)
 
-#####
+##### instructions
 
-#####
+![Instructions](instructions.png)
+
+##### game over
+
+![Game over](gameover.png)
 
 **_Future Updates_**
 
-- [ ] Future Update 1
-- [ ] Future Update 2
-- [] Completed Update
+- [ ] Add sound to tiles
+- [x] Instructions Button
 
 **_Credits_**

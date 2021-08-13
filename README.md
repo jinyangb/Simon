@@ -1,5 +1,7 @@
 # Simon Says
 
+Simon
+
 ## Date: 08/13/2021
 
 #### By: Jin Yang Brancalhao
@@ -12,7 +14,7 @@
 
 **_Description_**
 
-Simon says game. It's a game where there is a computer that selects tiles in a certain order and the player has to then select the same tiles in the same order. It is a game of memory that gradually get more difficult as you go.
+Simon game. It's a game where there is a computer that selects tiles in a certain order and the player has to then select the same tiles in the same order. It is a game of memory that gradually get more difficult as you go.
 
 **_Technologies Used_**
 

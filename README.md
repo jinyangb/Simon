@@ -30,7 +30,7 @@ Open game in surge.
 
 ##### start screen
 
-![Start Screen](startscreen.png)
+![Start Screen](start.png)
 
 ##### gameboard
 

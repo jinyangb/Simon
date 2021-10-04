@@ -15,17 +15,17 @@ h1 {
 }
 
 body {
-  background-color: rgb(143, 104, 54);
+  background-color: rgb(27, 27, 27);
 }
 
 .button:hover,
 .button:focus {
-  color: rgb(253, 198, 143);
+  color: rgb(255, 255, 255);
 }
 
 p {
   display: grid;
   justify-content: center;
   font-size: 30px;
-  color: blanchedalmond;
+  color: rgb(5, 5, 5);
 }
